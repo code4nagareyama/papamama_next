@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>流山 保育園マップ | Code for Nagareyama</title>
-        <meta name="description" content="千葉県流山市の保育園・幼稚園・小学校・中学校を地図(マップ)で表示します。特に、保育園に関しては空き状況、開園時間等で検索できます。">
+        <title>流山 保育園マップ(平成29年度4月入所向け) | Code for Nagareyama</title>
+        <meta name="description" content="[]平成29年度４月入所向け]千葉県流山市の保育園・幼稚園・小学校・中学校を地図(マップ)で表示します。特に、保育園に関しては空き状況、開園時間等で検索できます。">
         <link rel="stylesheet" href="css/ol.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap.css.map" type="text/css">
@@ -22,25 +22,17 @@
        </script>
     </head>
     <body>
-      <h1>千葉県流山市 保育園マップ by Code for Nagareyama</h1>
+      <h1>千葉県流山市 保育園マップ(平成29年度4月入所向け) by Code for Nagareyama</h1>
         <div data-role="page" id="mainPage">
             <div role="main" class="ui-content">
             <div id="nav">
                 <fieldset id="nav1" data-role="controlgroup" data-type="horizontal" data-mini="true">
-                    <label for="cbNinka" id="lblNinka">認可保育園</label>
+                    <label for="cbNinka" id="lblNinka">保育園</label>
                     <input type="checkbox" name="cbNinka" id="cbNinka" checked="checked">
 <!--
                     <label for="cbNinkagai" id="lblNinkagai">認可外</label>
                     <input type="checkbox" name="cbNinkagai" id="cbNinkagai" checked="checked">
 -->
-                    <label for="cbKindergarten" id="lblKindergarten">幼</label>
-                    <input type="checkbox" name="cbKindergarten" id="cbKindergarten" checked="checked">
-
-                    <label for="cbElementarySchool" id="lblElementarySchool">小</label>
-                    <input type="checkbox" name="cbElementarySchool" id="cbElementarySchool">
-
-                    <label for="cbMiddleSchool" id="lblMiddleSchool">中</label>
-                    <input type="checkbox" name="cbMiddleSchool" id="cbMiddleSchool">
 
                     <a id="btnFilter" href="#filterdialog" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-btn-a ui-icon-filter ui-btn-icon-right ui-icon-check">空き状況 & 検索</a>
 
@@ -67,8 +59,8 @@
                             <option value="5000">半径 5km</option>
                         </optgroup>
                     </select>
-                    <a id="btnHelp" href="#helpDialog" data-rel="popup" data-position-to="window" class="ui-btn ui-icon-question ui-btn-icon-notext">help</a>
-
+                    <button class="btn btn-default"><a href="https://code4nagareyama.github.io/papamama/" style="margin-top:10px" >平成28年度12月 保育園空き状況はこちら</a></button>
+                    <a id="btnHelp" href="#helpDialog" data-rel="popup" data-position-to="window" class="ui-btn ui-icon-question ui-btn-icon-notext">help</a><br/>
                 </fieldset>
             </div>
             <div id="map" class="map">
@@ -180,6 +172,7 @@
                 </fieldset>
             </div>
         </div>
+
         <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
         <script src="js/jquery.mobile-1.4.4.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
