@@ -404,6 +404,7 @@ Papamamap.prototype.getPopupContent = function(feature)
         content += '<tr>';
         content += '<th>欠員</th>';
         content += '<td>';
+
         var vacancy0 = feature.get('Vacancy0') ? feature.get('Vacancy0') : feature.get('Vacancy0');
         var vacancy1 = feature.get('Vacancy1') ? feature.get('Vacancy1') : feature.get('Vacancy1');
         var vacancy2 = feature.get('Vacancy2') ? feature.get('Vacancy2') : feature.get('Vacancy2');
@@ -418,12 +419,13 @@ Papamamap.prototype.getPopupContent = function(feature)
         || (vacancy4 !== undefined && vacancy4 !== null)
         || (vacancy5 !== undefined && vacancy5 !== null) )
         {
-            content += '<font color="green">空きあり</font>';
+            //content += '<font color="green">空きあり</font>';
 
         } else {
-            content += '<font color="red">空きなし</font>';
+            //content += '<font color="red">空きなし</font>';
         }
-        content += '(11/1現在)<br/>最新情報は<a href="https://www.city.nagareyama.chiba.jp/life/19/159/032061.html" target="_blank">流山市HPへ</a>';
+
+        content += '最新情報は<a href="http://www.city.nagareyama.chiba.jp/life/19/159/031906.html" target="_blank">流山市HPへ</a>';
         content += '</td>';
         content += '</tr>';
     }
