@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>流山 保育園マップ(平成29年度4月入所向け) | Code for Nagareyama</title>
-        <meta name="description" content="[]平成29年度４月入所向け]千葉県流山市の保育園・幼稚園・小学校・中学校を地図(マップ)で表示します。特に、保育園に関しては空き状況、開園時間等で検索できます。">
+        <meta name="description" content="[]平成29年度４月入所向け]千葉県流山市の保育園・幼稚園・小学校・中学校を地図(マップ)で表示します。特に、保育園に関しては開園時間等で検索できます。">
         <link rel="stylesheet" href="css/ol.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap.css.map" type="text/css">
@@ -35,7 +35,7 @@
                     <input type="checkbox" name="cbNinkagai" id="cbNinkagai" checked="checked">
 -->
 
-                    <a id="btnFilter" href="#filterdialog" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-btn-a ui-icon-filter ui-btn-icon-right ui-icon-check">空き状況 & 検索</a>
+                    <a id="btnFilter" href="#filterdialog" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-btn-a ui-icon-filter ui-btn-icon-right ui-icon-check">検索</a>
 
                     <label for="changeBaseMap">背景</label>
                     <select id="changeBaseMap" data-mini="true">
@@ -76,8 +76,9 @@
             <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
             <form>
                 <div style="padding:10px 20px;">
-                  <h3>空き状況(11/1現在)</h3>
-                  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <h3>検索</h3>
+
+              <!--  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
                       <label for="Vacancy0">0歳</label>
                       <input type="checkbox" id="Vacancy0" class="filtercb">
                       <label for="Vacancy1">1歳</label>
@@ -90,7 +91,7 @@
                       <input type="checkbox" id="Vacancy4" class="filtercb">
                       <label for="Vacancy5">5歳</label>
                       <input type="checkbox" id="Vacancy5" class="filtercb">
-                   </fieldset>
+                   </fieldset>-->
 
                     <legend>認可保育園</legend>
                     <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
@@ -182,8 +183,8 @@
         <script src="js/movecurrentlocationcontrol.js" type="text/javascript"></script>
         <script src="js/movetolist.js" type="text/javascript"></script>
         <script src="js/facilityfilter.js" type="text/javascript"></script>
-        <script src="js/papamamap.js" type="text/javascript"></script>
-        <script src="js/index.js" type="text/javascript"></script>
+        <script src="js/papamamap.js?date=20170205" type="text/javascript"></script>
+        <script src="js/index.js?date=20170205" type="text/javascript"></script>
         <div id="marker"></div>
         <div id="markerTitle"></div>
         <div id="center_marker"></div>
