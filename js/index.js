@@ -419,10 +419,10 @@ $('#mainPage').on('pageshow', function() {
 	{
 		papamamap.switchLayer($('#cbNinka').prop('id'), checkObj.ninka);
 		//papamamap.switchLayer($('#cbNinkagai').prop('id'), checkObj.ninkagai);
-		papamamap.switchLayer($('#cbKindergarten').prop('id'), checkObj.kindergarten);
+		//papamamap.switchLayer($('#cbKindergarten').prop('id'), checkObj.kindergarten);
 		$('#cbNinka').prop('checked', checkObj.ninka).checkboxradio('refresh');
-		$('#cbNinkagai').prop('checked', checkObj.ninkagai).checkboxradio('refresh');
-		$('#cbKindergarten').prop('checked', checkObj.kindergarten).checkboxradio('refresh');
+		//$('#cbNinkagai').prop('checked', checkObj.ninkagai).checkboxradio('refresh');
+		//$('#cbKindergarten').prop('checked', checkObj.kindergarten).checkboxradio('refresh');
 	}
 
 	/**
